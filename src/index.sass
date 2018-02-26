@@ -1,0 +1,79 @@
+@import "~normalize.css/normalize"
+
+// general styles
+
+\:root
+  --theme-colour: cornflowerblue
+
+h1, a, strong
+  color: var(--theme-colour)
+
+.img-bg
+  background-image: url("./assets/eat.jpg")
+  background-size: cover
+  width: 200px
+  height: 50px
+
+// grid layout definition
+
+.content
+  display: grid
+  grid-template-areas: "header header header" "navigation main ads" "footer footer footer"
+  grid-template-columns: 150px 1fr 150px
+  grid-template-rows: minmax(60px, max-content) 1fr minmax(30px, max-content)
+  min-height: 100vh
+
+  .header, .footer , .main, .left, .right
+    padding: 13px
+
+  .header
+    grid-area: header
+    background-color: #FFFF00
+    font-variant-caps: small-caps
+    font-variation-settings: normal
+
+  .footer
+    grid-area: footer
+    background-color: #000
+    color: #FFF
+
+  .main
+    grid-area: main
+    background-color: #D3D3D3
+
+  .left
+    grid-area: navigation
+    background-color: #FF4500
+    a
+      color: white
+      font-weight: bold
+
+  .right
+    grid-area: ads
+    background-color: #FF4500
+
+.wrapper-grid
+  display: grid
+  grid-template-areas: "left right"
+  grid-template-columns: 1fr 1fr
+  &.align-header
+    grid-auto-rows: 40px
+    align-items: center
+
+  .wg-left
+    grid-area: left
+
+  .wg-right
+    grid-area: right
+    text-align: right
+
+// addition style
+
+.news
+  color: green
+
+@media screen and (max-width: 768px)
+  .content
+    grid-template-areas: "header" "navigation" "main" "ads" "footer"
+    grid-template-columns: 100%
+    grid-template-rows: minmax(30px, max-content)  minmax(30px, max-content) 1fr minmax(30px, max-content) minmax(30px, max-content)

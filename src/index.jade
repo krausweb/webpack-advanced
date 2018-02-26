@@ -1,0 +1,58 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        title Index page
+    body.content
+        header.header
+            .wrapper-grid.align-header
+                .wg-left Header left contents
+                .wg-right Header right contents
+        main.main
+            #news.news
+                .img-bg
+            p
+                | The
+                a(href='https://drafts.csswg.org/css-grid/') CSS Grid Layout
+                | .
+                a(href='http://bitsofco.de/holy-grail-layout-css-grid') Read the blog post on bitsofco.de
+            p
+                | Not working properly? You may need to
+                a(href='http://igalia.github.io/css-grid-layout/enable.html')
+                    | enable it in
+                    | your browser
+                | .
+            div
+                h1 It’s on you how you want to live your life.
+                |       Everyone has a choice. I pick my choice, squeaky clean. They don’t want
+                |       us to eat. Let’s see what Chef Dee got that they don’t want us to eat. The weather is amazing, walk with me through
+                |       the pathway of more success. Take this journey with me, Lion! The key is to enjoy life, because they don’t want you
+                |       to enjoy life. I promise you, they don’t want you to jet ski, they don’t want you to smile.
+            p
+                strong It’s on you how you want to live your life.
+                |       Everyone has a choice. I pick my choice, squeaky clean. They don’t want
+                |       us to eat. Let’s see what Chef Dee got that they don’t want us to eat. The weather is amazing, walk with me through
+                |       the pathway of more success. Take this journey with me, Lion! The key is to enjoy life, because they don’t want you
+                |       to enjoy life. I promise you, they don’t want you to jet ski, they don’t want you to smile.
+        aside.left Menu
+            p
+                a(href="about.html") About page + import via Promise the login.js
+            p
+                a(href="home.html") Home page + Vue + jQuery cdn src
+        aside.right
+            | Ads.
+            p
+                | It’s on you how you want to live your life. Everyone has a choice. I pick my choice, squeaky clean. They don’t want
+                | us to eat. Let’s see what Chef Dee got that they don’t want us to eat. The weather is amazing, walk with me through
+                | the pathway of more success.
+        footer.footer
+            div
+                | Footer.
+                | Cur decor cantare? Sunt castores attrahendam grandis, alter quadraes. Make it so, wind!
+                | Mineraliss cantare in raptus hafnia! Castus cursuss ducunt ad bromium. Est altus stella, cesaris.
+                | Cum accentor velum, omnes turpises visum germanus, placidus genetrixes. Zeluss unda! Ubi est secundus silva?
+                | Issue remembers when you yearn with awareness. Diatrias cadunt, tanquam emeritis hilotae.
+        //script.
+          let jade = new index.Index({title: 'Generated via jade', 'class': 'my-text'});
+          document.body.appendChild(jade.elem);
+          index.welcome('Text via /index.html. Also see console.');

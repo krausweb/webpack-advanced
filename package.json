@@ -1,0 +1,57 @@
+{
+  "name": "webpack-test",
+  "version": "1.0.0",
+  "description": "Webpack improve config",
+  "main": "build.js",
+  "keywords": [
+    "webpack",
+    "nodejs"
+  ],
+  "author": "Krausweb",
+  "license": "ISC",
+  "scripts": {
+    "start:dev": "webpack-dev-server",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "NODE_ENV=production webpack",
+    "start": "NODE_ENV=development webpack"
+  },
+  "dependencies": {
+    "assets-webpack-plugin": "^3.5.1",
+    "cssnano": "^3.10.0",
+    "exports-loader": "^0.7.0",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "imports-loader": "^0.8.0",
+    "jade": "^1.11.0",
+    "moment": "^2.20.1",
+    "normalize.css": "^8.0.0",
+    "postcss-cssnext": "^3.1.0",
+    "postcss-import": "^11.1.0",
+    "rimraf": "^2.6.2",
+    "vue": "^2.5.13",
+    "webpack": "^3.11.0"
+  },
+  "devDependencies": {
+    "css-loader": "^0.28.9",
+    "doiuse": "^4.0.0",
+    "favicons-webpack-plugin": "0.0.7",
+    "file-loader": "^1.1.9",
+    "html-webpack-plugin": "^2.30.1",
+    "jade-loader": "^0.8.0",
+    "node-sass": "^4.7.2",
+    "node-static": "^0.7.10",
+    "postcss-load-config": "^1.2.0",
+    "postcss-loader": "^2.1.0",
+    "raw-loader": "^0.5.1",
+    "resolve-url-loader": "^2.2.1",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.20.2",
+    "sugarss": "^1.0.1",
+    "uglifyjs-webpack-plugin": "^1.2.0",
+    "webpack-dev-server": "^2.11.1"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "ie >= 9"
+  ]
+}
